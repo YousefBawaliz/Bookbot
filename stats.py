@@ -33,8 +33,10 @@ def count_chars(txt: str) -> float:
 def sort_on(items):
     return items["num"]
 
-def sort_dict(dict):
-    return dict.sort(reverse = True, key=sort_on)
+def sort_dict(list_of_dict):
+    tmp_dict = list_of_dict
+    tmp_dict.sort(reverse = True, key=sort_on)
+    return tmp_dict
 
 
 def convert_to_list_of_dict(dict) -> list[dict]:
